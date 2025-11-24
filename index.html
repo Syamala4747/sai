@@ -65,16 +65,17 @@
                         }
                         .wishes.show { animation: none; transform: none; opacity: 1; }
                         .wishes h1 {
-                            font-size: 34px;
+                            font-size: 22px;
                             line-height: 1.2;
                             margin-bottom: 16px;
                             padding: 0;
                             word-break: keep-all;
+                            white-space: nowrap;
                         }
                         .wishes p { font-size: 15px; line-height: 1.5; margin-bottom: 20px; }
                         .one-line { white-space: normal; overflow: visible; text-overflow: clip; }
                         .birthday-photo { max-width: 100%; width: 100%; height: auto; margin: 12px auto 20px auto; }
-                        .surprise-btn { width: 100%; max-width: 280px; margin: 4px auto 0 auto; padding: 14px 28px; font-size: 18px; }
+                        .surprise-btn { width: auto; max-width: 280px; margin: 4px auto 0 auto; padding: 14px 28px; font-size: 18px; display: block; }
                         .modal { padding: 10px; }
                         .modal-content { width: 100%; max-width: 100%; padding: 26px 18px 36px 18px; margin: 0 auto 24px auto; }
                         .letter { font-size: 14px; line-height: 1.55; }
@@ -208,6 +209,7 @@
             position: relative;
             overflow: hidden;
             border: 3px solid #fcb69f;
+            text-align: center;
         }
 
         .wishes::before {
@@ -262,7 +264,7 @@
 
         .wishes h1 {
             font-family: 'Dancing Script', cursive;
-            font-size: 54px;
+            font-size: 32px;
             background: linear-gradient(90deg, #ff6b9d, #fcb69f);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -270,6 +272,7 @@
             margin-bottom: 22px;
             font-weight: 700;
             letter-spacing: 1px;
+            white-space: nowrap;
         }
 
         .birthday-photo {
